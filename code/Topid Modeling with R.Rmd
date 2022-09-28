@@ -374,6 +374,8 @@ library(igraph); library(visNetwork)
 
 mod.out.corr <- topicCorr(ctmFit, cutoff = .01)
 plot(mod.out.corr)
+
+topicCorr(model, method = c("simple", "huge"), cutoff = 0.01, verbose = TRUE)
 ```
 
 This is a start but let's create a better, interactive network using the `visNetwork` package.
